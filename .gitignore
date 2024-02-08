@@ -131,3 +131,7 @@ dist
 
 #Mac OS
 .DS_Store
+
+#Project configs
+tsconfig.json
+tsup.config.ts
