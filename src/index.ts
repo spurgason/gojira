@@ -1,8 +1,7 @@
-import { Number } from "./classes/Number";
+import { Form } from "./classes/Form";
 
-export default function format(number: string|number) {
-
-  return new Number(number);
+export default function buildForm() {
+  return new Form('test', 'default', {method: 'post'});
 }
 
-console.log(format(12).currency())
+console.log(new Form('test', 'default', {method: 'post'}))
