@@ -1,4 +1,4 @@
-import {JSDOM} from 'jsdom'
+import { JSDOM } from 'jsdom';
 
 export class Form {
   name: string;
@@ -6,7 +6,7 @@ export class Form {
   options: object;
   formElement!: HTMLFormElement;
 
-  constructor(name: string, type : string = 'default', options: object = {}) {
+  constructor(name: string, type: string = 'default', options: object = {}) {
     this.name = name;
     this.type = type;
     this.options = options;
@@ -23,7 +23,7 @@ export class Form {
     this.formElement = Object.assign(form, {
       name: this.name,
       id: this.name,
-      ...this.options
+      ...this.options,
     });
 
     return this;
